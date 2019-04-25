@@ -1,3 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #ffffff;
+  background-color: #4CAF50;
+  font-size: 2rem;
+  padding: 0 25px;
+}
+.header-container nav a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 15px;
+}
+.section {
+  width: 70%;
+  margin: 45px auto;
+  height: 500px;
+  border: 1px solid #ffffff;
+  box-shadow: 1px 1px 5px #2973C2;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4CAF50;
+}
+.section h1 {
+  padding-bottom: 50px;
+}
+.section input {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  font-size: 2rem;
+}
+.section button {
+  padding: 10px;
+  width: 20%;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+html {
+  font-size: 62.5%;
+}
 body {
-  background-color: red;
+  font-size: 14px;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  min-width: 300px;
+  margin: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #ffffff;
+  background-image: url("../img/daniel-apodaca-784965-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+h1 {
+  font-size: 4rem;
 }

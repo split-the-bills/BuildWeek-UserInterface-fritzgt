@@ -1,3 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import './mixins.less';
+@import '../components/nav/nav.less';
+@import '../components/calculator/cal.less';
+
+html {
+    font-size: 62.5%;
+}
+
 body {
-    background-color: red
+    font-size: 14px;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    min-width: 300px;
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: @white;
+    // background-color: @main-blue;
+    background-image: url("../img/daniel-apodaca-784965-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 4rem;
 }
