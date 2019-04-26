@@ -9,39 +9,84 @@
   align-items: center;
   width: 100%;
   height: 70px;
-  border-bottom: 1px solid #ffffff;
-  background-color: #4CAF50;
-  font-size: 2rem;
+  border-bottom: 1px solid #2973C2;
+  font-size: 1.6rem;
   padding: 0 25px;
+  color: #2973C2;
 }
 .header-container nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: #2973C2;
   margin: 0 15px;
 }
-.section {
-  width: 70%;
-  margin: 45px auto;
-  height: 500px;
-  border: 1px solid #ffffff;
-  box-shadow: 1px 1px 5px #2973C2;
-  border-radius: 10px;
+#jumbotrom {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #4CAF50;
+  justify-content: space-between;
+  text-align: center;
+  background-image: url("../img/dan-gold-105699-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.section h1 {
-  padding-bottom: 50px;
+#jumbotrom div {
+  color: #ffffff;
 }
-.section input {
+#jumbotrom div h1 {
+  margin-top: 120px;
+}
+#jumbotrom div button {
+  padding: 10px;
+  width: 150px;
   border-radius: 10px;
+  font-size: 2.5rem;
+  background-color: #2973C2;
+  color: #ffffff;
+  margin: 20px;
+}
+#jumbotrom #main-img {
+  width: 70%;
+  height: 500px;
+  overflow: hidden;
+  min-width: 400px;
+}
+#jumbotrom #main-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: #F7F7F7;
+  padding: 30px 0;
+}
+.content div {
+  border-radius: 20px;
+  margin: 20px;
+  background-color: #ffffff;
+  max-width: 300px;
+  height: 500px;
+}
+.content div img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+.content div h1 {
+  padding: 30px;
+}
+.content div p {
+  border-radius: 15px;
   padding: 10px;
   margin: 20px;
   font-size: 2rem;
 }
-.section button {
+.content div button {
   padding: 10px;
   width: 20%;
   border-radius: 10px;
@@ -58,13 +103,8 @@ body {
   box-sizing: border-box;
   min-width: 300px;
   margin: 0;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  color: #ffffff;
-  background-image: url("../img/daniel-apodaca-784965-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  font-family: 'Questrial', sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
