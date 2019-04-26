@@ -75,7 +75,7 @@
   margin: 20px;
   background-color: #ffffff;
   max-width: 300px;
-  height: 500px;
+  height: auto;
 }
 .content div img {
   width: 100%;
@@ -103,11 +103,39 @@
 .container {
   display: flex;
   align-content: center;
+  background-color: #F7F7F7;
 }
 .container div {
-  display: flex;
-  align-content: center;
-  justify-content: center;
+  height: 300px;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 75px;
+  padding: 20px;
+}
+.container div h1 {
+  padding: 50px;
+}
+.container div ul {
+  text-align: left;
+}
+.container div ul li {
+  padding: 10px;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.container div input {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 30px;
+  transition: width 1s;
+}
+.container div input[type=text] {
+  width: 200px;
+  transition: width 0.35s ease-in-out;
+}
+.container div input[type=text]:focus {
+  width: 90%;
 }
 .container div button {
   padding: 10px;
@@ -117,6 +145,24 @@
   background-color: #2973C2;
   color: #ffffff;
   margin: 20px;
+  height: 50px;
+}
+#about div {
+  text-align: center;
+}
+#about div h1 {
+  padding-top: 60px;
+}
+#about div p {
+  font-size: 1.5rem;
+  padding: 50px;
+  line-height: 2rem;
+}
+#about div img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 50px;
 }
 html {
   font-size: 62.5%;
