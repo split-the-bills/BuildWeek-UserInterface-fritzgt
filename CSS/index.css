@@ -20,25 +20,55 @@
   text-decoration: none;
   color: #2973C2;
 }
-.header-container nav a {
+@media (max-width: 800px) {
+  .header-container #desktop-nav {
+    display: none;
+  }
+}
+.header-container #desktop-nav a {
   text-decoration: none;
   color: #2973C2;
   margin: 0 15px;
+}
+.header-container #mobile-nav {
+  display: none;
+}
+@media (max-width: 800px) {
+  .header-container #mobile-nav {
+    display: block;
+  }
+  .header-container #mobile-nav div {
+    width: 35px;
+    height: 3px;
+    background-color: #2973C2;
+    margin: 6px 0;
+  }
 }
 #jumbotrom {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  background-image: url("../img/dan-gold-105699-unsplash.jpg");
+  background-image: url("../img/duy-pham-704498-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 800px) {
+  #jumbotrom {
+    height: 400px;
+  }
 }
 #jumbotrom div {
   color: #ffffff;
 }
 #jumbotrom div h1 {
-  margin-top: 120px;
+  margin-top: 60px;
+  padding: 20px;
+}
+@media (max-width: 800px) {
+  #jumbotrom div h1 {
+    margin-top: 30px;
+  }
 }
 #jumbotrom div button {
   padding: 10px;
@@ -54,6 +84,11 @@
   height: 500px;
   overflow: hidden;
   min-width: 400px;
+}
+@media (max-width: 800px) {
+  #jumbotrom #main-img {
+    display: none;
+  }
 }
 #jumbotrom #main-img img {
   max-width: 100%;
