@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
 
 <head>
   <title>Split The Bill</title>
@@ -14,6 +14,9 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Bangers|Questrial" rel="stylesheet">
+
+  <!-- javascript -->
+  <script defer="defer" src="./components/nav/nav.js"></script>
 </head>
 
 <body>
@@ -28,13 +31,21 @@
     </nav>
 
     <!-- mobile nav -->
-    <nav id="mobile-nav">
-      <div></div>
-      <div></div>
-      <div></div>
+    <nav class="dropdown">
+      <section class="dropdown-button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section class="dropdown-content dropdown-hidden">
+
+
+      </section>
     </nav>
 
+
   </header>
+
 
   <section id="jumbotrom">
     <div>
@@ -56,7 +67,7 @@
   <section class="content">
     <div>
       <img src="img/daniel-apodaca-784965-unsplash.jpg" alt="">
-      <h1>Eat out</h1>
+      <h1>Eating out today?</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Animi, officiis omnis a ad sequi cum dolor.

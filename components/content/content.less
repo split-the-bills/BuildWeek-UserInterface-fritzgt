@@ -8,6 +8,13 @@
     background-color: @bone-white;
     padding: 60px 0;
 
+    @media @mobile-tablet {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+
+    }
+
     div {
         border-radius: 20px;
         margin: 20px;
@@ -15,13 +22,24 @@
         max-width: 300px;
         height: auto;
 
+        @media @mobile-tablet {
+            flex-direction: column;
+            max-width: 100%;
+            border-radius: 0;
+            margin: 0;
+
+        }
+
         img {
             width: 100%;
             height: auto;
             overflow: hidden;
             border-radius: 20px 20px 0 0;
 
+            @media @mobile-tablet {
+                border-radius: 0;
 
+            }
         }
 
 

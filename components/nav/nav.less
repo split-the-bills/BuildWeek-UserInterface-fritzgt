@@ -1,4 +1,5 @@
 .header-container {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,6 +9,7 @@
     font-size: 1.6rem;
     padding: 0 25px;
     color: @main-blue;
+    background-color: @white;
 
     #logo {
         font-family: @logo-font;
@@ -30,24 +32,37 @@
         }
     }
 
-    #mobile-nav {
+    .dropdown {
         display: none;
 
         @media @mobile-tablet {
             display: block;
 
-            div {
+            .dropdown-button div {
                 width: 35px;
                 height: 3px;
                 background-color: @main-blue;
                 margin: 6px 0;
             }
+
+            .dropdown-hidden {
+                display: none;
+
+            }
+
+
+            .dropdown-content {
+                top: 70px;
+                position: fixed;
+                height: 2000px;
+                width: 250px;
+                left: 70%;
+                background-color: @white;
+
+            }
         }
     }
 }
-
-
-
 
 
 
@@ -61,7 +76,8 @@
     background-size: cover;
 
     @media @mobile-tablet {
-        height: 400px;
+        height: 600px;
+        background-image: url("../img/liam-mckay-674319-unsplash.jpg");
 
     }
 
@@ -74,7 +90,8 @@
             padding: 20px;
 
             @media @mobile-tablet {
-                margin-top: 30px;
+                margin-top: 300px;
+                padding: 30px;
             }
         }
 
