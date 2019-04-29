@@ -10,6 +10,7 @@ class Dropdown {
 
     toggleContent() {
         this.content.classList.toggle("dropdown-hidden");
+        this.button.classList.toggle("change");
     }
 }
 
