@@ -68,7 +68,7 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    transition: 0.5s;
+    transition: 0.5s ease-in;
   }
   .header-container .dropdown .dropdown-content a {
     padding: 20px 0;
@@ -92,7 +92,7 @@
 }
 @media (max-width: 800px) {
   #jumbotrom {
-    height: 600px;
+    height: 750px;
     background-image: url("../img/liam-mckay-674319-unsplash.jpg");
   }
 }
@@ -198,6 +198,13 @@
   display: flex;
   align-content: center;
   background-color: #F7F7F7;
+  padding-top: 80px;
+}
+@media (max-width: 800px) {
+  .container {
+    padding-bottom: 125px;
+    flex-direction: column;
+  }
 }
 .container div {
   height: 300px;
@@ -205,6 +212,12 @@
   text-align: center;
   margin-bottom: 75px;
   padding: 20px;
+}
+@media (max-width: 800px) {
+  .container div {
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
 .container div h1 {
   padding: 50px;
@@ -228,8 +241,13 @@
   width: 200px;
   transition: width 0.35s ease-in-out;
 }
+@media (max-width: 800px) {
+  .container div input[type=text] {
+    width: 80%;
+  }
+}
 .container div input[type=text]:focus {
-  width: 90%;
+  width: 95%;
 }
 .container div button {
   padding: 10px;
@@ -240,6 +258,11 @@
   color: #ffffff;
   margin: 20px;
   height: 50px;
+}
+@media (max-width: 800px) {
+  #about {
+    padding-top: 80px;
+  }
 }
 #about div {
   text-align: center;
@@ -255,8 +278,12 @@
 #about div img {
   width: 100%;
   height: auto;
-  overflow: hidden;
   padding: 50px;
+}
+@media (max-width: 800px) {
+  #about div img {
+    padding: 30px 0 0 0;
+  }
 }
 html {
   font-size: 62.5%;

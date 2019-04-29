@@ -3,6 +3,12 @@
     align-content: center;
     align-content: center;
     background-color: @bone-white;
+    padding-top: 80px;
+
+    @media @mobile-tablet {
+        padding-bottom: 125px;
+        flex-direction: column;
+    }
 
 
     div {
@@ -11,6 +17,11 @@
         text-align: center;
         margin-bottom: 75px;
         padding: 20px;
+
+        @media @mobile-tablet {
+            width: 100%;
+            margin-bottom: 25px;
+        }
 
         h1 {
             padding: 50px;
@@ -32,18 +43,22 @@
             display: block;
             padding: 10px;
             border-radius: 5px;
-            // width: 90%;
             margin: 30px;
             transition: width 1s;
+
         }
 
         input[type=text] {
             width: 200px;
             transition: width .35s ease-in-out;
+
+            @media @mobile-tablet {
+                width: 80%;
+            }
         }
 
         input[type=text]:focus {
-            width: 90%;
+            width: 95%;
         }
 
 

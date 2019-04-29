@@ -75,7 +75,7 @@
                 background-color: @white;
                 display: flex;
                 flex-direction: column;
-                transition: 0.5s;
+                transition: 0.5s ease-in;
 
                 a {
                     padding: 20px 0;
@@ -83,6 +83,7 @@
                     color: @main-blue;
                     margin: 0 15px;
                     font-size: 2rem;
+
                 }
 
             }
@@ -106,8 +107,9 @@
     background-position: center;
     background-size: cover;
 
+
     @media @mobile-tablet {
-        height: 600px;
+        height: 750px;
         background-image: url("../img/liam-mckay-674319-unsplash.jpg");
 
     }
