@@ -9,7 +9,9 @@ class Dropdown {
     }
 
     toggleContent() {
+        // show dropdown
         this.content.classList.toggle("dropdown-hidden");
+        // Change burger menu to an X
         this.button.classList.toggle("change");
     }
 }
