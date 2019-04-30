@@ -253,6 +253,9 @@
 .container div input[type=text]:focus {
   width: 95%;
 }
+.container div input:last-of-type {
+  height: 60px;
+}
 .container div button {
   padding: 10px;
   width: 150px;
