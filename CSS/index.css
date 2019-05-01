@@ -85,6 +85,23 @@
     left: 100%;
   }
 }
+@media (max-width: 800px) and (max-width: 500px) {
+  .header-container .dropdown .dropdown-content {
+    width: 500px;
+    left: 40%;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .header-container .dropdown .dropdown-content a {
+    font-size: 2.5rem;
+    padding: 30px 0;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .header-container .dropdown .dropdown-hidden {
+    left: 100%;
+  }
+}
 #jumbotrom {
   display: flex;
   justify-content: space-between;
@@ -98,6 +115,11 @@
 @media (max-width: 800px) {
   #jumbotrom {
     height: 650px;
+    background-image: url("../img/kelsey-chance-575535-unsplash.jpg");
+  }
+}
+@media (max-width: 500px) {
+  #jumbotrom {
     background-image: url("../img/zach-reiner-1092524-unsplash.jpg");
   }
 }
@@ -123,6 +145,12 @@
   background-color: #2973C2;
   color: #ffffff;
   margin: 20px;
+}
+@media (max-width: 500px) {
+  #jumbotrom div button {
+    width: 90%;
+    height: 60px;
+  }
 }
 #jumbotrom #main-img {
   width: 70%;
@@ -236,11 +264,16 @@
   list-style-type: circle;
   list-style-position: inside;
 }
+@media (max-width: 800px) {
+  .container div ul li {
+    font-size: 1.8rem;
+  }
+}
 .container div input {
   display: block;
   padding: 10px;
   border-radius: 5px;
-  margin: 30px;
+  margin: 10px auto;
   transition: width 1s;
 }
 .container div input[type=text] {
@@ -250,6 +283,11 @@
 @media (max-width: 800px) {
   .container div input[type=text] {
     width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .container div input[type=text] {
+    width: 95%;
   }
 }
 .container div input[type=text]:focus {
@@ -268,6 +306,11 @@
   margin: 20px;
   height: 50px;
 }
+@media (max-width: 500px) {
+  .container div button {
+    width: 95%;
+  }
+}
 #about {
   padding-top: 80px;
 }
@@ -279,7 +322,7 @@
 }
 #about div p {
   font-size: 1.5rem;
-  padding: 50px;
+  padding: 30px;
   line-height: 2rem;
 }
 #about div img {

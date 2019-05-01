@@ -36,6 +36,10 @@
                 list-style-type: circle;
                 list-style-position: inside;
 
+                @media @mobile-tablet {
+                    font-size: 1.8rem;
+                }
+
             }
         }
 
@@ -43,7 +47,8 @@
             display: block;
             padding: 10px;
             border-radius: 5px;
-            margin: 30px;
+            // margin: 30px;
+            margin: 10px auto;
             transition: width 1s;
 
         }
@@ -55,6 +60,12 @@
             @media @mobile-tablet {
                 width: 80%;
             }
+
+            @media @mobile-phone {
+                width: 95%;
+            }
+
+
         }
 
         input[type=text]:focus {
@@ -77,6 +88,10 @@
             color: @white;
             margin: 20px;
             height: 50px;
+
+            @media @mobile-phone {
+                width: 95%;
+            }
         }
     }
 
