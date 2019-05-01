@@ -90,27 +90,29 @@
   justify-content: space-between;
   text-align: center;
   background-image: url("../img/duy-pham-704498-unsplash.jpg");
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 @media (max-width: 800px) {
   #jumbotrom {
-    height: 750px;
-    background-image: url("../img/david-lee-1202415-unsplash.jpg");
+    height: 650px;
+    background-image: url("../img/zach-reiner-1092524-unsplash.jpg");
   }
 }
 #jumbotrom div {
-  color: #ffffff;
+  color: #282828;
 }
 #jumbotrom div h1 {
-  margin-top: 60px;
+  margin-top: 90px;
   padding: 20px;
 }
 @media (max-width: 800px) {
   #jumbotrom div h1 {
     margin-top: 300px;
     padding: 30px;
+    color: #ffffff;
   }
 }
 #jumbotrom div button {
@@ -220,7 +222,7 @@
 @media (max-width: 800px) {
   .container div {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 .container div h1 {
