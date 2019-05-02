@@ -1,0 +1,195 @@
+.header-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid @main-blue;
+    font-size: 1.6rem;
+    padding: 0 25px;
+    color: @main-blue;
+    background-color: @white;
+
+
+    #logo {
+        font-family: @logo-font;
+        font-size: 3rem;
+        text-decoration: none;
+        color: @main-blue;
+    }
+
+    #logo-img {
+        height: 60px;
+        width: auto;
+    }
+
+
+    #desktop-nav {
+        @media @mobile-tablet {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: @main-blue;
+            margin: 0 15px;
+
+        }
+    }
+
+    .dropdown {
+        display: none;
+
+        @media @mobile-tablet {
+            display: block;
+
+            .bar1,
+            .bar2,
+            .bar3 {
+                width: 35px;
+                height: 3px;
+                background-color: @main-blue;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+
+            // burger menu effect
+            .change .bar1 {
+                -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                transform: rotate(-45deg) translate(-9px, 6px);
+            }
+
+            .change .bar2 {
+                opacity: 0;
+            }
+
+            .change .bar3 {
+                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                transform: rotate(45deg) translate(-8px, -8px);
+            }
+
+
+
+
+            .dropdown-content {
+                top: 70px;
+                position: fixed;
+                height: 2000px;
+                width: 250px;
+                left: 70%;
+                background-color: @white;
+                display: flex;
+                flex-direction: column;
+                transition: 0.5s ease-in;
+
+                @media @mobile-phone {
+                    width: 500px;
+                    left: 40%;
+                }
+
+                a {
+                    padding: 20px 0;
+                    text-decoration: none;
+                    color: @main-blue;
+                    margin: 0 15px;
+                    font-size: 2rem;
+
+                    @media @mobile-phone {
+                        font-size: 2.5rem;
+                        padding: 30px 0;
+                    }
+
+                }
+
+            }
+
+            .dropdown-hidden {
+                left: 100%;
+
+                @media @mobile-phone {
+
+                    left: 100%;
+                }
+
+            }
+        }
+    }
+}
+
+
+
+#jumbotrom {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-image: url("../img/duy-pham-704498-unsplash.jpg");
+    height: 620px;
+    // Parallax effect
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+
+    @media @mobile-tablet {
+        background-image: url("../img/kelsey-chance-575535-unsplash.jpg");
+
+    }
+
+    @media @mobile-phone {
+        background-image: url("../img/zach-reiner-1092524-unsplash.jpg");
+    }
+
+
+    div {
+        color: @main-grey;
+
+        h1 {
+            margin-top: 90px;
+            padding: 20px;
+            text-shadow: 1px 2px @white;
+
+            @media @mobile-tablet {
+                margin-top: 300px;
+                padding: 30px;
+                color: @white;
+                text-shadow: 2px 2px black;
+            }
+        }
+
+        button {
+            padding: 10px;
+            width: 150px;
+            border-radius: 10px;
+            font-size: 2.5rem;
+            background-color: @main-blue;
+            color: @white;
+            margin: 20px;
+
+            @media @mobile-phone {
+                width: 90%;
+                height: 60px;
+            }
+        }
+    }
+
+    #main-img {
+        width: 70%;
+        height: 500px;
+        overflow: hidden;
+        min-width: 400px;
+
+        @media @mobile-tablet {
+            display: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}

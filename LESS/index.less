@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import './mixins.less';
+@import '../components/nav/nav.less';
+@import '../components/content/content.less';
+@import '../components/contact/contact.less';
+@import '../components/about/about.less';
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+body {
+    font-size: 14px;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    min-width: 300px;
+    margin: 0;
+    font-family: @main-font;
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 150%;
+}
+
+footer {
+
+    height: 200px;
+    background-color: @footer-bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+    p {
+        color: @bone-white;
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+}

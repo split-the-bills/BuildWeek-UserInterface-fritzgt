@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    align-content: center;
+    align-content: center;
+    background-color: @bone-white;
+    padding-top: 80px;
+
+    @media @mobile-tablet {
+        padding-bottom: 125px;
+        flex-direction: column;
+    }
+
+
+    div {
+        height: 300px;
+        width: 50%;
+        text-align: center;
+        margin-bottom: 75px;
+        padding: 20px;
+
+        @media @mobile-tablet {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            padding: 50px;
+
+        }
+
+        ul {
+            text-align: left;
+
+            li {
+                padding: 10px;
+                list-style-type: circle;
+                list-style-position: inside;
+
+                @media @mobile-tablet {
+                    font-size: 1.8rem;
+                }
+
+            }
+        }
+
+        input {
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            // margin: 30px;
+            margin: 10px auto;
+            transition: width 1s;
+
+        }
+
+        input[type=text] {
+            width: 200px;
+            transition: width .35s ease-in-out;
+
+            @media @mobile-tablet {
+                width: 80%;
+            }
+
+            @media @mobile-phone {
+                width: 95%;
+            }
+
+
+        }
+
+        input[type=text]:focus {
+            width: 95%;
+        }
+
+        input:last-of-type {
+            height: 60px;
+
+        }
+
+
+
+        button {
+            padding: 10px;
+            width: 150px;
+            border-radius: 10px;
+            font-size: 2.5rem;
+            background-color: @main-blue;
+            color: @white;
+            margin: 20px;
+            height: 50px;
+
+            @media @mobile-phone {
+                width: 95%;
+            }
+        }
+    }
+
+}
