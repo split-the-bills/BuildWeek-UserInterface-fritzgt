@@ -86,6 +86,11 @@
   }
 }
 @media (max-width: 800px) and (max-width: 500px) {
+  .header-container .dropdown .dropdown-content {
+    left: 55%;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
   .header-container .dropdown .dropdown-content a {
     font-size: 2.5rem;
     padding: 30px 0;
