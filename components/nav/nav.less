@@ -136,7 +136,11 @@
 
     @media @mobile-tablet {
         background-image: url("../img/kelsey-chance-575535-unsplash.jpg");
-
+        // Disable Parallax effect for smaller devices (must are not compatibable)
+        background-attachment: scroll;
+        height: auto;
+        width: auto;
+        overflow: hidden;
     }
 
     @media @mobile-phone {
